@@ -1,14 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Coder Manual Project Bootcamp Application
+Subscription-based Web application
+http://codermanual.com
 
 Things you may want to cover:
 
 * Ruby version
-
+2.11
 * System dependencies
-
+Linux
 * Configuration
 
 * Database creation
