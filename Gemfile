@@ -6,15 +6,20 @@ gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 
-# using bootstrap-sass to give easier access to html, css, and jquery work
-#gem 'bootstrap-sass', '~> 3.3.5'  Current version, reset to older version
-gem 'bootstrap-sass', '~> 3.3.1'
-
 # Use postscresql as the DB for Prod!
 group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+# using bootstrap-sass to give easier access to html, css, and jquery work
+#gem 'bootstrap-sass', '~> 3.3.5'  Current version, reset to older version
+gem 'bootstrap-sass', '~> 3.3.1'
+
+# using font-awesome to get prettier fonts
+#gem 'font-awesome-sass', '~> 4.3.0'
+gem 'font-awesome-sass', '~> 4.2.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
