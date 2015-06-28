@@ -7,7 +7,8 @@ gem 'rails', '4.1.0'
 gem 'sqlite3', group: [:development, :test]
 
 # using bootstrap-sass to give easier access to html, css, and jquery work
-gem 'bootstrap-sass', '~> 3.3.5'
+#gem 'bootstrap-sass', '~> 3.3.5'  Current version, reset to older version
+gem 'bootstrap-sass', '~> 3.3.1'
 
 # Use postscresql as the DB for Prod!
 group :production do
