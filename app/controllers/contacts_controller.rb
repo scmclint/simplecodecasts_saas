@@ -3,6 +3,12 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
   
+  private
+  def contact_params
+    params.require(:contact).permit(:name, :email, :comments)
+  end
+      
+  public
   def create
     @contact = Contact.new(contact_params)
     
@@ -22,11 +28,10 @@ class ContactsController < ApplicationController
       flash[:danger] = 'Error occured, message has not been sent/saved.'
       redirect_to new_contact_path
     end
-  end
     
-    private
-      def contact_params
-        params.require(:contact).permit(:name, :email, :comments)
-      end
+  end
+  #end of ContactsController class
+    
+
   
 end
