@@ -12,6 +12,9 @@ group :production do
   gem 'rails_12factor'
 end
 
+# user authentication stuff
+gem 'devise', '3.4.1'
+
 # using bootstrap-sass to give easier access to html, css, and jquery work
 #gem 'bootstrap-sass', '~> 3.3.5'  Current version, reset to older version
 gem 'bootstrap-sass', '~> 3.3.1'
