@@ -21,6 +21,17 @@
           Clints Dev Match
         <% end %>
       </div>
+      
+      <div class="nav navbar-nav navbar-right">
+        <!-- variable "current_user" is a test to see if user is logged in when using the "devise" authentication framework -->
+        <% if current_user %>
+          <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary nav-bar-btn' %>
+        <% else %>
+          <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
+          <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success navbar-btn', method: :get %> 
+        <% end %>
+      </div>
+      
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "About", about_path %></li>
