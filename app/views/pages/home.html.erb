@@ -10,14 +10,14 @@
       <h2 class="text-center">Basic Membership (Free Clint)</h2>
       <h4>Sign up for basic access to community for Free!</h4>
       <p>
-      <%= link_to "Sign up Basic (free)", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+      <%= link_to "Sign up Basic (free)", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
     </div>
   </div>
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Pro Membership</h2>
       <h4>Sign up for Pro Account at $10/month for Access to the contact info and community Clint.</h4>
-      <%= link_to "Professional Sign up", new_user_registration_path, class: 'btn btn-success btn-lg btn-block'  %>
+      <%= link_to "Professional Sign up", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block'  %>
     </div>
   </div>  
 </div>
