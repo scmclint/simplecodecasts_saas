@@ -18,7 +18,7 @@ gem 'devise', '3.4.1'
 # Stripe addition - Credit Card/payment processing
 gem 'stripe', '1.16.1'
 
-# use figaro to hide secret keys
+# use figaro to hide secret keys to hide sensitive information in github too!
 gem 'figaro', '1.0.0'
 
 # using bootstrap-sass to give easier access to html, css, and jquery work
