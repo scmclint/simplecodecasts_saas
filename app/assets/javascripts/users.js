@@ -20,6 +20,7 @@ $(document).ready(function() {
     }
     return false;
   }); // form submission using status and response returned from stripe
+  
   function stripeResponseHandler(status, response) {
     // Get a reference to the form:
     var f = $("#new_user");
