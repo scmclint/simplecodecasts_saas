@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
     
     if @profile.save
       flash[:success] = "Profile Updated (into DB)"
-      redirect_to user_path(:user_id)
+      redirect_to user_path( params[:user_id] )
     else  # nope didn't save successfully
       render action: :new
     end  # end of if @profile.save
