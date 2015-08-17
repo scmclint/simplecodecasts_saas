@@ -1,0 +1,49 @@
+/* User Profile show icon */
+.user-show-avatar {
+  height: 128px;
+  width: 128px;
+}
+/* User's index page picture styles */
+.user-index-avatar {
+  border-radius: 50%;
+  background-color: purple;
+}
+
+.job-title-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #2e6da4;
+  border-radius: 14px;
+  background-color: #337ab7;
+  color: white;
+  text-align: center;
+}
+
+ .well.profile-block {
+  color: #fff;   
+  h3 {
+    margin-top: 0px;
+  }  
+ }
+
+.well.profile-description {
+  
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+
+}
+
+.well.contact-info {
+    
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.well.white-bg {
+  background-color: white;
+}
+
+.well.green-bg {
+  background-color: green;
+}
